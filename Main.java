@@ -49,16 +49,15 @@ public class Main {
                 teknisi.totalGajiPokok();
                 teknisi.infoGaji();
                 break;
-//            case "KRY":
-//                Karyawan newKaryawan = new Karyawan();
-//                newKaryawan.setJamLembur(jam_keluar);
-//                newKaryawan.tambahanLembur();
-//                newKaryawan.setJumlahAnak(jumlah_anak);
-//                newKaryawan.tambahanTunjanganAnak();
-//                newKaryawan.setJamPresensi(jam_masuk, jam_keluar);
-//                newKaryawan.denda();
-//                newKaryawan.infoGaji();
-//                break;
+            case "KRY":
+                Karyawan karyawan = new Karyawan();
+                karyawan.setPresensi(jam_masuk, jam_keluar);
+                karyawan.setJumlahAnak(jumlah_anak);
+                karyawan.tambahanLembur();
+                karyawan.tambahanTunjanganAnak();
+                karyawan.totalGajiPokok();
+                karyawan.infoGaji();
+                break;
         }
     }
 }
